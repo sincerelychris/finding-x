@@ -1,0 +1,25 @@
+#solve for x calculator 
+
+def solve_x(a,b,opperator):
+        print (f"x {opperator} {a} = {b}")
+        print("--------------------")
+        if opperator == "+":
+            print("--------------------")
+            print(f"X EQUALS: {b-a}")
+        elif opperator == "-":
+            print("--------------------")
+            print(f"X EQUALS: {b+a}")
+        else:
+            quit()
+
+
+opperator = input("Enter your opperator (Ex: +  or  -): ")
+
+number_before_equal_sign = input("Enter the Real Number in your equation that's not x & is before the equal sign (Ex. A + x = c): ")
+number_before_equal_sign = int(number_before_equal_sign)
+
+after_equal_sign = input("Enter your C in your equation (Ex. a + b = C): ")
+after_equal_sign = int(after_equal_sign)
+
+print(f"You entered: {number_before_equal_sign} {opperator} x = {after_equal_sign}")
+solve_x(number_before_equal_sign,after_equal_sign,opperator)
