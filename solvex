@@ -3,7 +3,10 @@
 def solve_x(a,b,opperator):
         print (f"x {opperator} {a} = {b}")
         print("--------------------")
-        if opperator == "+":
+        if opperator == "*":
+            print("--------------------")
+            print(f"X EQUALS: {b/a}")
+        elif opperator == "+":
             print("--------------------")
             print(f"X EQUALS: {b-a}")
         elif opperator == "-":
@@ -13,7 +16,7 @@ def solve_x(a,b,opperator):
             quit()
 
 
-opperator = input("Enter your opperator (Ex: +  or  -): ")
+opperator = input("Enter your opperator (Ex: * or + or  -): ")
 
 number_before_equal_sign = input("Enter the Real Number in your equation that's not x & is before the equal sign (Ex. A + x = c): ")
 number_before_equal_sign = int(number_before_equal_sign)
